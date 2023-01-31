@@ -1,0 +1,20 @@
+<% if session[:error] %>
+  <div class="flash error">
+    <p><%= session.delete :error %></p>
+  </div>
+<% end %>
+
+<form action="/new" method="post">
+  <dl>
+    <dt>
+      <label for="document_name">Enter the name for the new document:</label>
+    </dt>
+    <dd>
+      <input name="document_name" placeholder="Document Name (Only .txt/.md files are accepted)" type="text" value="">
+    </dd>
+  </dl>
+  <fieldset class="actions">
+    <input type="submit" value="Create">
+    <a href="/">Cancel</a>
+  </fieldset>
+</form>

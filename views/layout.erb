@@ -13,9 +13,22 @@
 <body>
   <header>
     <a href="/"><h1>Content Management System</h1></a>
+    <%== yield_content :index_header_new_document %>
   </header>
+
+  <% if session[:error] %>
+    <div class="flash error">
+     <p><%= session.delete :error %></p>
+    </div>
+  <% elsif session[:success] %>
+    <div class="flash success">
+        <p><%= session.delete :success %></p>
+    </div>
+  <% end %>
+
   <main>
-    <%= yield %>
+    <%== yield %>
   </main>
+
 </body>
 </html>

@@ -1,0 +1,9 @@
+<form action="/users/signin" method="post">
+  <label for="username">Username:</label>
+  <input type="text" name="username" value="<%= session[:username] %>" required minlength="3" maxlength="20" size="20">
+  <br>
+  <label for="password">Password:</label>
+  <input type="password" name="password" required minlength="3" maxlength="20" size="20">
+  <br>
+  <input type="submit" value="Sign In">
+</form>

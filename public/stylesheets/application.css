@@ -87,7 +87,7 @@ form dd {
   padding: 0 0 15px 0; 
 }
 
-form input[type="text"] {
+form input[type="text"], form input[type="password"] {
   width: 100%;
   height: 58px;
   padding: 15px 20px;
@@ -159,7 +159,7 @@ form fieldset.actions a:hover {
 
 #lists li {
   position: relative;
-  padding: 18px 25px 18px 57px;
+  padding: 18px 25px 24px 57px;
   margin: 0 0 10px 0;
   border-radius: 8px;
   background: #f6f6f6; 

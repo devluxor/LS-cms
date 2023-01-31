@@ -1,7 +1,9 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    bcrypt (3.1.18)
     erubis (2.7.0)
+    minitest (5.17.0)
     multi_json (1.15.0)
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
@@ -11,6 +13,9 @@ GEM
     rack (2.2.6.2)
     rack-protection (3.0.5)
       rack
+    rack-test (2.0.2)
+      rack (>= 1.3)
+    redcarpet (3.6.0)
     ruby2_keywords (0.0.5)
     sinatra (3.0.5)
       mustermann (~> 3.0)
@@ -29,8 +34,12 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  bcrypt
   erubis
+  minitest
   puma
+  rack-test
+  redcarpet
   sinatra
   sinatra-contrib
   tilt

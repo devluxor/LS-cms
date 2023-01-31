@@ -1,0 +1,14 @@
+<section id="file_content">
+  <header>
+    <h1>Edit content of <%= @file_name %>:</h1><br>
+  </header>
+  <main>
+    <form action="/<%= @file_name %>/edit" method="post">
+      <div>
+        <textarea name="file_content" id="file_content" rows="20" cols="100"><%= @file_content %></textarea>
+      </div>
+      <br>
+      <input type="submit" value="Save Changes">
+    </form>
+  </main>
+</section>
